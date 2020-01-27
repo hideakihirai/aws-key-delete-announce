@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "valid-reflector-252106",
+  "private_key_id": "0025e18f407af482a4fdf4406f3e72f7e563b133",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCwWQ0WQWZDldDm\n/EKnuw12Bxy3QyY3IXBG84ccbb6rxiw4nm8IXP+vZE/J1LW/n0OX92MSjG/+ESYY\n3pNQgED65m9nhAOlod7vm2GSISr7tUTkLiYlxa4xTpJfnpJjNzeK6kUnR+AWVINl\noB+CmO7bMxwazwrcqQZnCql8aIDERM4cXBUOrxoktKaQQJnUl1mpBmhYrrp7GRLc\ng7cPSaT5DmAHyP5LXQ/bKqTVMPI/yJCbynDRw4xRIrfdzHjWv6x6zPOa7hLsnW/a\n6QsbEDzG4jP82LeD4kxiSUrW+4btE5uxGeUorUK1aVUFgEgj8SbwUYZas/4Ri+7e\nbTCDMF1BAgMBAAECggEAAtDZ3hpl+2u0XIXYEMp9CZQNk98Mfd+eBcysbP+ocQt5\naAoz7WsiZt7Ct+SFEOsw+/zrze9kYpG2nSR2WiLBdt17Af5YL7rqPthJL5lG5jfu\nd/gagj/6GwiH8DiC2kxMH0mZmFSZWfNC7wUxJPI+c81Tfu7splnuvl02bYQ+fx5v\n1vOYpoaOZ/pjJm3DbTQzWvIeJ0XZR/LqPGJrf6VZ7+7TEyEM58KLqB6AA2B5dHWx\niDFc8VmQ4YOeSY4OElMlpXNxSg/HN/JkGVQO0I5absdqHNmxDgOOfaIMAld+qQzr\nMufIjie3HONcjZ3ShSsqd6uhNA3n8EFjXyUrruHWYQKBgQDh1z17eNdT7mzntxQW\nx5dt2Fx9Ue14XWWfaynId587QO/Vc4NNYHIeolrq0rckAKjPNbHbby1sJvHfof1t\nZaNXGicxsHqmdeHaoLEEK3jO3Ly4dSGgPF2y/LBnRbERB6HRjO17jUobodY9v3DH\nacN7nlf+5PBxby15v5LeLpFP8QKBgQDH5c8pExNpFFD9aF4TXNeATZjcckgRwijf\nBNvFFyL8wbVJDxwAxq7dNACxSK3FQIEsTSilMYj4lfPbXH7yZW1GHWb1yZzPfvj5\nm0J7FtB2afbyaKS8aJE/aqoHkPa2ocDJUWJf0PUQCP19o2YUjMs96Bhx9WAQ+58a\nCXJ3GCkyUQKBgGAmgViWJCbptZgZjAX+x+vOV+JLBS1fpipvN4TP2Q0jInjgCyDg\nVPXR7Z9YQvyjAzvlAmoINXB8TDIIB5uR0C7/RXyUREOmoJeyHmtGDtMTi42E4OIV\nkVbo2jm9pBs6ApzywRD/IHQPPOVhIiTkVIPG8HPnCK9ixBu3glHxxZAhAoGAKqA3\nn6OgtPyPFKpnvStEDOj/GqsH8Tl866mmj42SeWF5Hd4p84Rqj2Libut3mqNZqC+/\n5hH9Cj03peRAccHtHlFwviLC3IBP6TIRaBwCUe3gqepkjoShzGsbXMetxF4TtRo0\npwfw6f1wyJTKVMF9KXNPmyVe2eA+Ghg/n2O4jTECgYBOptrHXxUnqp4JQunDozc/\nskOFZcTSTywR6oPrm5KscHzocjFjNF2A1vwyTf5S6cEvxkbUTMh3RsbO3kQ4reza\nhGIWJ05mjJuYJG3Sq6x7scKNXg4/M1ok0pPhp8uQu5Sbuyc3w+NzHSUWB7bcD8z6\n5LgHPid8jM/eWICi9efjfg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "aws-key-request-to-slack@valid-reflector-252106.iam.gserviceaccount.com",
+  "client_id": "106472015174095752521",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/aws-key-request-to-slack%40valid-reflector-252106.iam.gserviceaccount.com"
+}

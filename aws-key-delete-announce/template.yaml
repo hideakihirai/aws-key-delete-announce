@@ -1,0 +1,79 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AWS
+
+  Sample SAM Template for AWS
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 2:03
+
+Resources:
+  LambdaFunction:   # function_name
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: lambda_function/
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Role: !GetAtt SamIamRole.Arn    # set role as samIamRole
+      Events:
+        Timer:
+          Type: Schedule
+          Properties:
+            Schedule: cron(0 6 ? * * *)   # JST:15
+      Environment:
+        Variables:
+          SLACK_API_URL: "https://slack.com/api/chat.postMessage"
+          BOT_ACCESS_TOKEN: "xoxb-10711501747-752648249329-WGXFUDahv2Dyb6Hg3yGDByRm"
+          SP_SHEET_KEY: "1ZLJf6GQE5ywcATKZxYWWl_EdLjsNHjlCYazrS_DeGcs"
+          SP_SHEET: "key_request_form"
+          SP_SHEET_TBL: "users_json"
+          ADMIN_ID_1: "U75R8M3J7"
+          ADMIN_ID_2: "ULF3WH04C"
+  SamIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: "sts:AssumeRole"
+      Policies:
+        -
+          PolicyName: "sam_iam_policy_for_lambda"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              -
+                Effect: "Allow"
+                Action: [ "logs:CreateLogStream",
+                          "logs:PutLogEvents",
+                          "logs:CreateLogGroup"]
+                Resource: "*"
+              -
+                Effect: "Allow"
+                Action: [ "iam:DeleteUser",
+                          "iam:DeletePolicy",
+                          "iam:DetachUserPolicy"]
+                Resource: "*"
+
+Parameters:
+  Environment:
+    Type: String
+    AllowedValues:
+    - test
+    - production
+    Default: test
+
+Mappings:
+  EnvironmentMap:
+    test:
+      envalue1: '20000'
+      envalue2: '10000'
+    production:
+      envalue1: '20000'
+      envalue2: '10000'
